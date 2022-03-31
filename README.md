@@ -1,0 +1,1 @@
+This is a simple program to check if an input number is a part of the Fibonacci sequence.
