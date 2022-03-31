@@ -1,12 +1,10 @@
-# Fibonacci up to 100
-
 number = input("Enter a value to check: ")
-try:
+try:  # strips excess spaces from integer
     number1 = number.strip()
 except AttributeError:
     # data is not a string, can't strip
     number1 = number
-try:
+try:  # checks if it's a string
     valid = number1.isnumeric()
 except AttributeError:
     # data is an int
@@ -21,12 +19,11 @@ else:
     y = 1
     a = 0
     b = 0
-    if x == 0:
+    if x == 0:  # treats 0 separately
         print(x, 'is part of the Fibonacci sequence!')
     else:
 
-        # fibonacci pattern
-
+        # checks if x is part of fibonacci pattern
 
         while a < x:
             b = y
@@ -41,4 +38,4 @@ else:
         else:
             i += 1
 
-k = input('Press anything to exit')
+k = input('Press anything to exit')  # attempt to stop cmd exiting on input
